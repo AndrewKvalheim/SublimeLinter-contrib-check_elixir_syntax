@@ -1,8 +1,6 @@
 SublimeLinter-contrib-check_elixir_syntax
 ================================
 
-[![Build Status](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-check_elixir_syntax.svg?branch=master)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-check_elixir_syntax)
-
 This linter plugin for [SublimeLinter][docs] provides an interface to [check_elixir_syntax](__linter_homepage__). It will be used with files that have the “__syntax__” syntax.
 
 ## Installation
