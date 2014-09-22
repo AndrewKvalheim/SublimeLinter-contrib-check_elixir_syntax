@@ -1,0 +1,10 @@
+SublimeLinter-contrib-check_elixir_syntax
+-------------------------------
+This linter plugin for SublimeLinter provides an interface to check_elixir_syntax.
+
+** IMPORTANT! **
+
+Before this plugin will activate, you *must*
+follow the installation instructions here:
+
+https://github.com/Andrew,,,/SublimeLinter-contrib-check_elixir_syntax
