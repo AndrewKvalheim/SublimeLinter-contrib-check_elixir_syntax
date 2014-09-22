@@ -10,6 +10,7 @@
 
 """This module exports the Check_elixir_syntax plugin class."""
 
+import json
 from SublimeLinter.lint import Linter, util
 
 
@@ -17,20 +18,21 @@ class Check_elixir_syntax(Linter):
 
     """Provides an interface to check_elixir_syntax."""
 
-    syntax = ''
+    syntax = 'elixir'
     cmd = 'check_elixir_syntax'
-    executable = None
-    version_args = '--version'
-    version_re = r'(?P<version>\d+\.\d+\.\d+)'
-    version_requirement = '>= 1.0'
-    regex = r''
-    multiline = False
-    line_col_base = (1, 1)
-    tempfile_suffix = None
-    error_stream = util.STREAM_BOTH
-    selectors = {}
-    word_re = None
-    defaults = {}
-    inline_settings = None
-    inline_overrides = None
-    comment_re = None
+    version_requirement = '0.0.1'
+    line_col_base = (0, 0)
+    error_stream = util.STREAM_STDOUT
+
+    def find_errors(self, output):
+        for result in json.loads(output):
+
+            match = True
+            line = result['line'] - 1
+            col = None
+            error = result['type'] == 'error'
+            warning = result['type'] == 'warning'
+            message = result['message']
+            near = result['token'].strip("[]'")
+
+            yield match, line, col, error, warning, message, near

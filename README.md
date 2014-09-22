@@ -30,6 +30,10 @@ If you would like to contribute enhancements or fixes, please do the following:
 
 1. Fork the plugin repository.
 1. Hack on a separate topic branch created from the latest `master`.
+1. Confirm that all tests pass:
+
+        python -m unittest discover -s tests
+
 1. Commit and push the topic branch.
 1. Make a pull request.
 1. Be patient.  ;-)
