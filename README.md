@@ -1,23 +1,15 @@
 SublimeLinter-contrib-check_elixir_syntax
 ================================
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [check_elixir_syntax](__linter_homepage__). It will be used with files that have the “__syntax__” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [check_elixir_syntax][check_elixir_syntax]. It will be used with files that have the “elixir” syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `check_elixir_syntax` is installed on your system. To install `check_elixir_syntax`, do the following:
+Before using this plugin, you must ensure that `check_elixir_syntax` is installed on your system. See the `check_elixir_syntax` documentation for installation instructions.
 
-1. Install Other.
-
-1. Install `check_elixir_syntax` by typing the following in a terminal:
-   ```
-   <package manager> install check_elixir_syntax
-   ```
-
-
-**Note:** This plugin requires `check_elixir_syntax` __version__ or later.
+**Note:** This plugin requires `check_elixir_syntax` 0.0.1.
 
 ### Linter configuration
 In order for `check_elixir_syntax` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
@@ -32,16 +24,6 @@ To install via Package Control, do the following:
 1. Within Sublime Text, bring up the [Command Palette][cmd] and type `install`. Among the commands you should see `Package Control: Install Package`. If that command is not highlighted, use the keyboard or mouse to select it. There will be a pause of a few seconds while Package Control fetches the list of available plugins.
 
 1. When the plugin list appears, type `check_elixir_syntax`. Among the entries you should see `SublimeLinter-contrib-check_elixir_syntax`. If that entry is not highlighted, use the keyboard or mouse to select it.
-
-## Settings
-For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
-
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-check_elixir_syntax provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
-
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
@@ -69,3 +51,4 @@ Thank you for helping out!
 [settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html
 [linter-settings]: http://sublimelinter.readthedocs.org/en/latest/linter_settings.html
 [inline-settings]: http://sublimelinter.readthedocs.org/en/latest/settings.html#inline-settings
+[check_elixir_syntax]: https://github.com/AndrewKvalheim/check_elixir_syntax
